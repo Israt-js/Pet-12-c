@@ -1,7 +1,7 @@
 const Footer = () => {
     return(
       <div className="">
-<footer className="footer p-10 bg-orange-300 text-neutral-content text-base">
+<footer className="footer p-10 bg-orange-300 text-neutral-content text-base mt-11">
   <aside>
   <img className="h-28 w-32 text-black" src="https://i.ibb.co/4j0NLBN/file.png" alt="o"/>
     <p className="text-black">ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
