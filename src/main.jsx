@@ -10,6 +10,8 @@ import Home from './component/Home/Home';
 import Maine from './Maine';
 import AuthProvider from './component/Provider/AuthProvider';
 import Login from './component/signin&up/Login';
+import PetListing from './component/pet Listen/PetListing';
+import PetDetailsModal from './component/pet Listen/PetD';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/pet",
+        element: <PetListing></PetListing>,
+      },
+      {
+        path: "/d",
+        element: <PetDetailsModal></PetDetailsModal>
       }
      ]
   }
