@@ -64,10 +64,10 @@ const Navber = () => {
                         user ? 
                         <>
                             <li><img src={user.photoURL} alt="User" title={user.displayName} className="rounded-full online h-8 w-8 mt-2 mr-2" /></li>
-                            <li className="btn bg-orange-300 text-white m-1"><a onClick={handleLogOut} href="#">LogOut</a></li>
+                            <li className="btn bg-orange-400 text-white m-1"><a onClick={handleLogOut} href="#">LogOut</a></li>
                         </>
                         :
-                        <li><Link className="btn bg-orange-300 text-white m-1" to={'/login'}>Login</Link></li>  
+                        <li><Link className="btn bg-orange-400 text-white m-1" to={'/login'}>Login</Link></li>  
                     }
                 </ul>
             </div>
