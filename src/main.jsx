@@ -11,7 +11,11 @@ import Maine from './Maine';
 import AuthProvider from './component/Provider/AuthProvider';
 import Login from './component/signin&up/Login';
 import PetListing from './component/pet Listen/PetListing';
-import PetDetailsModal from './component/pet Listen/PetD';
+import PetDetails from './component/pet Listen/PetD';
+import PetCard from './component/pet Listen/PetCard';
+import PetDonate from './component/pet Listen/PetDonate';
+import DonateD from './component/pet Listen/DonateD';
+import Register from './component/signin&up/Register';
 
 const router = createBrowserRouter([
   {
@@ -27,12 +31,28 @@ const router = createBrowserRouter([
         element: <Login></Login>,
       },
       {
+        path: "/register",
+        element: <Register></Register>,
+      },
+      {
         path: "/pet",
         element: <PetListing></PetListing>,
       },
       {
-        path: "/d",
-        element: <PetDetailsModal></PetDetailsModal>
+        path: "/pet/:id",
+        element: <PetDetails></PetDetails>
+      },
+      {
+        path: "/petCard",
+        element: <PetCard></PetCard>
+      },
+      {
+        path: "/petDonate",
+        element: <PetDonate></PetDonate>
+      },
+      {
+        path: "/petcard/:id",
+        element: <DonateD></DonateD>
       }
      ]
   }

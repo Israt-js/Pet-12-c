@@ -18,5 +18,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-// const githubPro = GithubAuthProvider();
 export default auth;
