@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
-import { AuthContext } from "../Provider/AuthProvider";
 import { Link } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { AuthContext } from "./Provider/AuthProvider";
 
   const Register = () => {
   const { createUser } = useContext(AuthContext);

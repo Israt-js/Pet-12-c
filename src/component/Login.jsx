@@ -5,8 +5,8 @@ import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import auth from '../Firebase/Firebase.config';
-import { AuthContext } from '../Provider/AuthProvider';
+import auth from './Firebase/Firebase.config';
+import { AuthContext } from './Provider/AuthProvider';
 
 const Login = () => {
     // const authInfo = { user, createUser, signInUser, logOut, loading, signInWithGithub };
