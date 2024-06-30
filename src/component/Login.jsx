@@ -84,7 +84,7 @@ const Login = () => {
       <p className='text-2xl font-medium text-center p-5'>Don't have an account? <Link to={'/register'}>Register</Link></p>
         </div>
         <div className="">
-           <img className="h-96 w-96" src="https://i.ibb.co/gzK1C16/438065230-462939463083308-3398277295200122591-n-removebg-preview.png" alt="" />
+           <img className="h-96 w-96" src="https://i.ibb.co/dBPg1Yw/438065230-462939463083308-3398277295200122591-n-removebg-preview.png" alt="" />
         </div>
       </div>
     </div>

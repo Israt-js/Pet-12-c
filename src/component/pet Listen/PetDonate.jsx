@@ -38,7 +38,7 @@ const PetDonate = () => {
         if (campaigns.length === index + 1) {
           return <div ref={lastCampaignElementRef} key={campaign._id}><PetCard campaign={campaign} /></div>;
         } else {
-          return <PetCard key={campaign._id} campaign={campaign} />;
+          return <PetCard key={`${campaign.id}-${index}`} campaign={campaign} />;
         }
       })}
     </div>

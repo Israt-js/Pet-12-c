@@ -11,7 +11,7 @@ const PetCard = ({ campaign }) => {
       <p>Target Amount: ${targetAmount}</p>
       <p>Current Amount: ${currentAmount}</p>
       <div className="card-actions justify-end">
-      <Link to={`/petCard/${campaign.id}`}><button className="btn bg-orange-400">View Details</button></Link>
+      <Link to={`/petCard/${campaign.id}`} ><button className="btn bg-orange-400">View Details</button></Link>
       </div>
     </div>
   </div>

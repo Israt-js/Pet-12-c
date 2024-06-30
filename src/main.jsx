@@ -14,7 +14,6 @@ import PetListing from './component/pet Listen/PetListing';
 import PetDetails from './component/pet Listen/PetD';
 import PetCard from './component/pet Listen/PetCard';
 import PetDonate from './component/pet Listen/PetDonate';
-import DonateD from './component/pet Listen/DonateD';
 import AuthProvider from './component/Provider/AuthProvider';
 
 const router = createBrowserRouter([
@@ -24,11 +23,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "/register",
@@ -36,23 +35,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/pet",
-        element: <PetListing></PetListing>
+        element: <PetListing></PetListing>,
       },
       {
         path: "/pet/:id",
-        element: <PetDetails></PetDetails>
+        element: <PetDetails></PetDetails>,
       },
       {
         path: "/petCard",
-        element: <PetCard></PetCard>
+        element: <PetCard></PetCard>,
       },
       {
         path: "/petDonate",
         element: <PetDonate></PetDonate>,
-      },
-      {
-        path: "/petcard/:id",
-        element: <DonateD></DonateD>
       }
      ]
   }

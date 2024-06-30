@@ -35,7 +35,7 @@ const Home = () => {
         </div>
         <div className="card w-[96%] h-[600px] m-10 shadow-xl">
           <figure className="px-10 pt-10">
-            <img src="https://i.ibb.co/NCgNJgJ/noah-buscher-pue-U9k-KIk-Xw-unsplash.jpg" alt="Dog" className="rounded-xl object-cover w-full h-full"/>
+            <img src="https://i.ibb.co/YBcdZ6f/peri-stojnic-5-Vr-RVPfb-MI-unsplash.jpg" alt="Dog" className="rounded-xl object-cover w-full h-full"/>
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Dogs</h2>
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
         <div className="card w-[96%] h-[600px] m-10 shadow-xl">
           <figure className="px-10 pt-10">
-            <img src="https://i.ibb.co/w4LV0PB/maddy-baker-Wp-LC86-UD7-Lk-unsplash.jpg" alt="Dog" className="rounded-xl object-cover w-full h-full"/>
+            <img src="https://i.ibb.co/T0zbvDL/alvan-nee-br-Fs-Z7qsz-SY-unsplash.jpg" alt="Dog" className="rounded-xl object-cover w-full h-full"/>
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">Dog</h2>
@@ -77,7 +77,7 @@ const Home = () => {
         <h1 className="text-5xl font-semibold text-center pt-4">Action</h1>
         <div className="flex flex-col items-center mt-8 space-y-8">
           <div className="relative w-[96%] h-[500px]">
-            <img src="https://i.ibb.co/zf1f06m/mona-magnussen-a7bdqje-G6-M4-unsplash.jpg" alt="Adopt a pet" className="rounded-xl object-cover w-full h-full"/>
+            <img src="https://i.ibb.co/F568r68/hang-niu-Tn8-DLxwu-DMA-unsplash.jpg" alt="Adopt a pet" className="rounded-xl object-cover w-full h-full"/>
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-xl">
               <p className="text-3xl text-white font-bold text-center">
                 "Give a pet a new home and a better life. Adopt today and make a difference!"
@@ -85,7 +85,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative w-[96%] h-[500px]">
-            <img src="https://i.ibb.co/6JdPnPT/mikhail-vasilyev-Nodtn-Cs-Ld-TE-unsplash.jpg" alt="Inspirational pet" className="rounded-xl object-cover w-full h-full"/>
+            <img src="https://i.ibb.co/zXjDwTs/mikhail-vasilyev-Nodtn-Cs-Ld-TE-unsplash.jpg" alt="Inspirational pet" className="rounded-xl object-cover w-full h-full"/>
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-xl">
               <p className="text-3xl text-white font-bold text-center">
                 "Your new best friend is waiting. Bring joy and love into your home by adopting a pet."
@@ -93,7 +93,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative w-[96%] h-[500px]">
-            <img src="https://i.ibb.co/346Bbsh/alvan-nee-T-0-EW-SEbs-E-unsplash.jpg" alt="Inspire pet" className="rounded-xl object-cover w-full h-full" />
+            <img src="https://i.ibb.co/tsRpDZh/maddy-baker-Wp-LC86-UD7-Lk-unsplash.jpg" alt="Inspire pet" className="rounded-xl object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-xl">
               <p className="text-3xl text-white font-bold text-center">
                 "Open your heart and home to a furry friend. Adopt a pet and change a life."
@@ -112,7 +112,7 @@ const Home = () => {
       </div>
       <div className="about">
       <div className="about-us bg-gray-100 py-20">
-  <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold text-center mb-10">About Us</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="flex items-center justify-center">
@@ -131,8 +131,8 @@ const Home = () => {
         </p>
       </div>
     </div>
-  </div>
-</div>
+      </div>
+      </div>
 
       </div>
       <div className="">
