@@ -1,24 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const PetListing = () => {
-  const [pets, setPets] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  useEffect(() => {
-    const fetchPets = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/pet');
-        const data = await response.json();
-        setPets(data);
-      } catch (error) {
-        console.error('Error fetching tourist spots:', error);
-      }
-    };
-
-    fetchPets();
-  }, []);
+  const pets = [
+    { id: 1, name: "Buddy", age: 3, location: "New York", category: "Cat", image: "https://i.ibb.co/KqYKH7R/raoul-droog-y-MSec-CHs-IBc-unsplash.jpg" },
+    { id: 2, name: "Whiskers", age: 2, location: "Los Angeles", category: "Cat", image: "https://i.ibb.co/hYsVwCG/hang-niu-Tn8-DLxwu-DMA-unsplash.jpg" },
+    { id: 3, name: "Max", age: 2, location: "Chicago", category: "Dog", image: "https://i.ibb.co/wdMFZ2S/alvan-nee-ZCHj-2l-JP00-unsplash.jpg" },
+    { id: 4, name: "Tom", age: 4, location: "Malaysia", category: "Dog", image: "https://i.ibb.co/R3PCKvX/cristian-castillo-73py-V0-JJOm-E-unsplash.jpg" },
+    { id: 5, name: "Tony", age: 3, location: "London", category: "Dog", image: "https://i.ibb.co/gwxj9Mv/peri-stojnic-5-Vr-RVPfb-MI-unsplash.jpg" },
+    { id: 6, name: "Pitter", age: 5, location: "Bangkok", category: "Cat", image: "https://i.ibb.co/WzMCWrM/nihal-karkala-vcg9-w-y-Mk-unsplash.jpg" },
+  ];
 
   const filteredPets = pets.filter(pet =>
     pet.name.toLowerCase().includes(searchQuery.toLowerCase()) &&

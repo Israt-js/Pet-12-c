@@ -172,7 +172,7 @@ const Home = () => {
         <p className="text-lg">Learn about the importance of a balanced diet and proper nutrition for your pet's health and well-being.</p>
       </div>
       <div className="text-center">
-        <img src="https://i.ibb.co/0cyjxKK/darinka-kievskaya-ff221-Bu56m-I-unsplash.jpg" alt="Pet Care" className="mx-auto mb-4" />
+        <img src="https://i.ibb.co/rQMgW2W/darinka-kievskaya-ff221-Bu56m-I-unsplash.jpg" alt="Pet Care" className="mx-auto mb-4" />
         <h3 className="text-xl font-semibold mb-2">Exercise</h3>
         <p className="text-lg">Discover fun and engaging ways to keep your pet active and maintain their physical fitness.</p>
       </div>

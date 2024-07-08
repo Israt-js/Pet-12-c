@@ -1,46 +1,20 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import axios from 'axios';
+import React from 'react';
 import PetCard from './PetCard';
 
 const PetDonate = () => {
-  const [campaigns, setCampaigns] = useState([]);
-  const [page, setPage] = useState(1);
-  const [hasMore, setHasMore] = useState(true);
-  const observer = useRef();
-
-  useEffect(() => {
-    const fetchCampaigns = async () => {
-      try {
-        const response = await axios.get(`http://localhost:5000/campaigns?page=${page}&limit=9`);
-        setCampaigns(prevCampaigns => [...prevCampaigns,...response.data]);
-        if (response.data.length === 0) setHasMore(false);
-      } catch (error) {
-        console.error('Error fetching campaigns:', error);
-      }
-    };
-
-    fetchCampaigns();
-  }, [page]);
-
-  const lastCampaignElementRef = useCallback(node => {
-    if (observer.current) observer.current.disconnect();
-    observer.current = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting && hasMore) {
-        setPage(prevPage => prevPage + 1);
-      }
-    });
-    if (node) observer.current.observe(node);
-  }, [hasMore]);
+  const campaigns = [
+    { id: 1, image: "https://i.ibb.co/C7MP3yd/raoul-droog-y-MSec-CHs-IBc-unsplash.jpg", title: "Save the Cats", description: "A campaign to save stray cats in the city.", targetAmount: 10000, currentAmount: 1500, createdAt: new Date() },
+    { id: 2, image: "https://i.ibb.co/0GbQSkL/hang-niu-Tn8-DLxwu-DMA-unsplash.jpg", title: "Dog Rescue Mission", description: "Helping injured dogs find new homes.", targetAmount: 20000, currentAmount: 5000, createdAt: new Date() },
+    { id: 3, image: "https://i.ibb.co/zxn11wY/alvan-nee-br-Fs-Z7qsz-SY-unsplash.jpg", title: "Pet Adoption Fair", description: "Organizing a fair to help pets find their forever homes.", targetAmount: 5000, currentAmount: 1200, createdAt: new Date() }
+  ];
 
   return (
-    <div className="campaigns-grid">
-      {campaigns.map((campaign, index) => {
-        if (campaigns.length === index + 1) {
-          return <div ref={lastCampaignElementRef} key={campaign._id}><PetCard campaign={campaign} /></div>;
-        } else {
-          return <PetCard key={`${campaign.id}-${index}`} campaign={campaign} />;
-        }
-      })}
+    <div className="container mx-auto py-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {campaigns.map(campaign => (
+          <PetCard key={campaign.id} campaign={campaign} />
+        ))}
+      </div>
     </div>
   );
 };

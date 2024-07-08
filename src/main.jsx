@@ -42,11 +42,11 @@ const router = createBrowserRouter([
         element: <PetDetails></PetDetails>,
       },
       {
-        path: "/petCard",
+        path: "/petCard/:id",
         element: <PetCard></PetCard>,
       },
       {
-        path: "/petDonate",
+        path: "/petCard",
         element: <PetDonate></PetDonate>,
       }
      ]
